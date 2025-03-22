@@ -1,4 +1,63 @@
 ```# SQL - Important EMP Table Queries
+# SQL - Create Database EMPLOYEEB3_RAW
+CREATE DATABASE EMPLOYEEB3_RAW
+
+-- Create a New DEPT table.
+CREATE TABLE DEPT(DEPTNO INT(3) PRIMARY KEY , DNAME VARCHAR(20) NOT NULL, LOC VARCHAR(20) NOT NULL;
+
+-- Create a New SALGRADE table.
+CREATE TABLE SALGRADE( LOSAL INT(9) ,HISAL(9),GRADE INT(2));
+
+-- Create a New EMP table.
+CREATE TABLE EMP(EMPNO INT (3) PRIMARY KEY, ENAME VARCHAR(20) NOT NULL, JOB VARCHAR(20) NOT NULL, MGR INT(3),HIREDATE DATE NOT NULL, COMM INT(3) ,DEPTNO INT(3) NOT NULL,);
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+# SQL - EMP Table Inserts
+
+-- Insert a new row into the EMP table.
+INSERT INTO EMP VALUES('7499','WARD','SALESMAN','7566','1981-02-20',2100,105,30);
+
+-- Insert a new row into the EMP table.
+INSERT INTO EMP VALUES('7521','ALLEN','SALESMAN','7698','1981-02-22',1750,88,30);
+
+-- Insert a new row into the EMP table.
+INSERT INTO EMP VALUES('7566','JONES','MANAGER','7788','1981-02-02',2975,149,20);
+
+-- Insert a new row into the EMP table.
+INSERT INTO EMP VALUES('7654','MARTIN','SALESMAN','7698','1981-09-28',1795,88,30);
+
+-- Insert a new row into the EMP table.
+INSERT INTO EMP VALUES('7698','BLAKE','MANAGER','7788','1981-01-05',2850,143,30);
+
+-- Insert a new row into the EMP table.
+INSERT INTO EMP VALUES('7728','CLARK','MANAGER','7788','1981-06-09',2950,148,10);
+
+-- Insert a new row into the EMP table.
+INSERT INTO EMP VALUES('7788','KING','PRESIDENT',NULL,'1981-11-17',5200,260,10);
+
+-- Insert a new row into the EMP table.
+INSERT INTO EMP VALUES('7839','SCOTT','ANALYST','7788','1987-04-19',3000,150,20);
+
+-- Insert a new row into the EMP table.
+INSERT INTO EMP VALUES('7844','TURNER','SALESMAN','7698','1981-08-09',2000,100,30);
+
+-- Insert a new row into the EMP table.
+INSERT INTO EMP VALUES('7876','JAMES','CLERK','7698','1987-03-12',1450,73,30);
+
+-- Insert a new row into the EMP table.
+INSERT INTO EMP VALUES('7900','ADAMS','CLERK','7566','1987-05-23',1600,80,20);
+
+-- Insert a new row into the EMP table.
+INSERT INTO EMP VALUES('7902','FORD','ANALYST','7788','1983-12-03',3000,150,20);
+
+-- Insert a new row into the EMP table.
+INSERT INTO EMP VALUES('7934','MILLER','CLERK','7782','1982-01-23',1300,40,10);
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 -- Select all columns and rows from the EMP table.
 SELECT * FROM EMP;
@@ -74,43 +133,3 @@ SELECT * FROM EMP ORDER BY ENAME, JOB;
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# SQL - EMP Table Inserts
-
--- Insert a new row into the EMP table.
-INSERT INTO EMP VALUES('7499','WARD','SALESMAN','7566','1981-02-20',2100,105,30);
-
--- Insert a new row into the EMP table.
-INSERT INTO EMP VALUES('7521','ALLEN','SALESMAN','7698','1981-02-22',1750,88,30);
-
--- Insert a new row into the EMP table.
-INSERT INTO EMP VALUES('7566','JONES','MANAGER','7788','1981-02-02',2975,149,20);
-
--- Insert a new row into the EMP table.
-INSERT INTO EMP VALUES('7654','MARTIN','SALESMAN','7698','1981-09-28',1795,88,30);
-
--- Insert a new row into the EMP table.
-INSERT INTO EMP VALUES('7698','BLAKE','MANAGER','7788','1981-01-05',2850,143,30);
-
--- Insert a new row into the EMP table.
-INSERT INTO EMP VALUES('7728','CLARK','MANAGER','7788','1981-06-09',2950,148,10);
-
--- Insert a new row into the EMP table.
-INSERT INTO EMP VALUES('7788','KING','PRESIDENT',NULL,'1981-11-17',5200,260,10);
-
--- Insert a new row into the EMP table.
-INSERT INTO EMP VALUES('7839','SCOTT','ANALYST','7788','1987-04-19',3000,150,20);
-
--- Insert a new row into the EMP table.
-INSERT INTO EMP VALUES('7844','TURNER','SALESMAN','7698','1981-08-09',2000,100,30);
-
--- Insert a new row into the EMP table.
-INSERT INTO EMP VALUES('7876','JAMES','CLERK','7698','1987-03-12',1450,73,30);
-
--- Insert a new row into the EMP table.
-INSERT INTO EMP VALUES('7900','ADAMS','CLERK','7566','1987-05-23',1600,80,20);
-
--- Insert a new row into the EMP table.
-INSERT INTO EMP VALUES('7902','FORD','ANALYST','7788','1983-12-03',3000,150,20);
-
--- Insert a new row into the EMP table.
-INSERT INTO EMP VALUES('7934','MILLER','CLERK','7782','1982-01-23',1300,40,10);
