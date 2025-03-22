@@ -1,24 +1,18 @@
-# SQL-
-It contains important SQL statements
+# SQL - Important EMP Table Queries
 
 -- Select all columns and rows from the EMP table.
-
 SELECT * FROM EMP;
 
 -- Select distinct job titles from the EMP table.
-
 SELECT DISTINCT JOB FROM EMP;
 
 -- Select all columns and rows for employees with the job 'MANAGER'.
-
 SELECT * FROM EMP WHERE JOB = 'MANAGER';
 
 -- Select all columns and rows for employees hired before January 1, 1981.
-
 SELECT * FROM EMP WHERE HIREDATE < TO_DATE('1981-01-01', 'YYYY-MM-DD');
 
 -- Select employee number, name, and salary from the EMP table.
-
 SELECT EMPNO, ENAME, SAL FROM EMP;
 
 -- Select employee number, name, job, and hire date for employees with the job 'ANALYST'.
@@ -78,10 +72,9 @@ SELECT * FROM EMP ORDER BY JOB;
 -- Select all columns and rows from the EMP table, ordered by employee name and then by job title.
 SELECT * FROM EMP ORDER BY ENAME, JOB;
 
-
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-
+# SQL - EMP Table Inserts
 
 -- Insert a new row into the EMP table.
 INSERT INTO EMP VALUES('7499','WARD','SALESMAN','7566','1981-02-20',2100,105,30);
@@ -119,6 +112,5 @@ INSERT INTO EMP VALUES('7900','ADAMS','CLERK','7566','1987-05-23',1600,80,20);
 -- Insert a new row into the EMP table.
 INSERT INTO EMP VALUES('7902','FORD','ANALYST','7788','1983-12-03',3000,150,20);
 
--- Insert a new row into the EMP table. (Note: There was a syntax error in the original input. I've corrected it)
+-- Insert a new row into the EMP table.
 INSERT INTO EMP VALUES('7934','MILLER','CLERK','7782','1982-01-23',1300,40,10);
-
