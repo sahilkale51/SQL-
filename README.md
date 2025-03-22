@@ -1,4 +1,4 @@
-# SQL - Important EMP Table Queries
+```# SQL - Important EMP Table Queries
 
 -- Select all columns and rows from the EMP table.
 SELECT * FROM EMP;
