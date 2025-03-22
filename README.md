@@ -2,18 +2,23 @@
 It contains important SQL statements
 
 -- Select all columns and rows from the EMP table.
+
 SELECT * FROM EMP;
 
 -- Select distinct job titles from the EMP table.
+
 SELECT DISTINCT JOB FROM EMP;
 
 -- Select all columns and rows for employees with the job 'MANAGER'.
+
 SELECT * FROM EMP WHERE JOB = 'MANAGER';
 
 -- Select all columns and rows for employees hired before January 1, 1981.
+
 SELECT * FROM EMP WHERE HIREDATE < TO_DATE('1981-01-01', 'YYYY-MM-DD');
 
 -- Select employee number, name, and salary from the EMP table.
+
 SELECT EMPNO, ENAME, SAL FROM EMP;
 
 -- Select employee number, name, job, and hire date for employees with the job 'ANALYST'.
